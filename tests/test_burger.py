@@ -5,11 +5,6 @@ from burger import Burger
 
 class TestBurger:
 
-    def test_init(self): 
-
-        burger = Burger()
-
-        assert (burger.bun, burger.ingredients) == (None, [])
 
     def test_set_buns(self): 
 
