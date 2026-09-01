@@ -1,24 +1,29 @@
-## Задание 1: Юнит-тесты
+Юнит-тесты для сервиса Stellar Burgers
 
-### Автотесты для проверки программы, которая помогает заказать бургер в Stellar Burgers
 
-### Реализованные сценарии
+Реализованы проверки методов класса burger:
+1. Инициализация бургера - __init__
+2. Установка булочки - set_buns
+3. Добавление ингредиентов - add_ingredient
+4. Удаление ингредиентов - remove_ingredient
+5. Перемещение ингредиентов - move_ingredient
+6. Расчёт стоимости бургера - get_price
+7. Формирование чека - get_receipt
 
-Созданы юнит-тесты, покрывающие классы `Bun`, `Burger`, `Ingredient`, `Database`
 
-Процент покрытия 100% (отчет: `htmlcov/index.html`)
+Структура проекта:
+- tests/: файл с тестами для класс burger - test_burger.py
+- файлы исходного кода: bun/burger/database/ingredient_types/ingredient/praktikum.py
+- .gitignore: файл для исключения файлов из Git
 
-### Структура проекта
 
-- `praktikum` - пакет, содержащий код программы
-- `tests` - пакет, содержащий тесты, разделенные по классам. Например, `bun_test.py`, `burger_test.py` и т.д.
+Стек: Python 3.14.4, pytest, pytest-cov
 
-### Запуск автотестов
 
-**Установка зависимостей**
+Покрытие кода класса burger:
 
-> `$ pip install -r requirements.txt`
-
-**Запуск автотестов и создание HTML-отчета о покрытии**
-
->  `$ pytest --cov=praktikum --cov-report=html`
+Name        Stmts   Miss  Cover   Missing
+-----------------------------------------
+burger.py      27      0   100%
+-----------------------------------------
+TOTAL          27      0   100%
